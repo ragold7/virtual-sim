@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual SIM</title>
+    <link rel="stylesheet" href="/static/css/style.css"> <!-- Link to your CSS file -->
+    <script src="/static/js/script.js" defer></script> <!-- Link to your JavaScript file -->
+</head>
+<body>
+    <h1>Welcome to Virtual SIM</h1>
+
+    <!-- Chat box for displaying the conversation -->
+    <div id="chatBox" style="border: 1px solid #ccc; padding: 10px; width: 300px; height: 200px; overflow-y: auto; margin: 20px auto;">
+        <!-- Dynamic content will appear here -->
+    </div>
+
+    <!-- Input field for user text -->
+    <textarea id="userInput" placeholder="Type your message..." style="width: 300px; height: 60px; margin-top: 10px;"></textarea>
+    <br>
+
+    <!-- Buttons for interaction -->
+    <button onclick="sendMessage()" style="padding: 10px 20px; margin-top: 10px;">Send</button>
+    <button onclick="startVoiceRecognition()" style="padding: 10px 20px; margin-top: 10px;">🎤 Speak</button>
+
+    <!-- Display the bot's response dynamically -->
+    <p id="response" style="margin-top: 20px; font-weight: bold;"></p>
+</body>
+</html>
